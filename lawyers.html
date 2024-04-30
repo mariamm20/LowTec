@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="LawTec is platform combines legal tradition with artificial intelligence to create a collaborative space where legal minds can shape the future of the profession." />
+  <meta name="keywords" content="Lowtec, online, lawyer, justice, consultant " />
+  <!-- Title -->
+  <title>LawTec</title>
+  <!-- favicon  -->
+  <link rel="icon" href="assests/img/logo-icon.ico" />
+  <!-- Icons CDN -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Css files -->
+  <link rel="stylesheet" href="assests/css/bootstrap-css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assests/css/global.css" />
+  <link rel="stylesheet" href="assests/css/lawyers.css" />
+</head>
+
+<body>
+  <!-- Start Header -->
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="container-fluid img-wrapper">
+          <a class="navbar-brand" href="userHome.html">
+            <img src="assests/img/logo.png" alt="logo image" width="100%" class="d-inline-block align-text-top">
+          </a>
+        </div>
+        <div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class='bx bx-menu'></i>
+          </button>
+          
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="userHome.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="lawyers.html">Attorneys</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="customerBills.html">Your&nbsp;Bills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="userCalender.html">Appointments</a>
+            </li>
+            <li class="nav-item">
+              <a href="chat.html" class="position-relative nav-link">
+                Messages
+                <span
+                  class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                  <span class="visually-hidden">New alerts</span>
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="notification.html" class="position-relative nav-link">
+                Notifications
+                <span
+                  class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle notify">
+                  <span class="visually-hidden">New alerts</span>
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+
+
+              <div class="btn-group">
+                <button type="button" class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  <div class="user-data">
+                    <div class="img-wrapper">
+                      <img src="assests/img/profile.jpg" alt="user-img" width="100%" />
+                    </div>
+                </button>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item">Tarek Abd El Aziz</li>
+                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Setting</a></li>
+
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="Home.html">Logout</a></li>
+                </ul>
+              </div>
+
+
+
+            </li>
+            <li class="nav-item ">
+              <a class="btn" href="booking.html">Book Appointment</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <!-- End Header -->
+
+  <!-- Start Main -->
+  <div class="main">
+
+<!-- Modal -->
+<div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <div class="modal-body">
+          <div class="profile">
+              <div class="img-wrapper">
+                  <img src="assests/img/profile.jpg" alt="profile image" width="100%">
+              </div>
+              <div class="profile-data">
+                  <h4>Tarek Abd El Aziz</h4>
+                  <div class="in">
+                      <input type="file" accept=".png,.jpg,.jpeg,.gif" name="uploadfile" id="img"
+                          style="display:none;" onchange="javascript:showoneimg()" />
+                      <label for="img"><span id="delete-btn" class="material-symbols-rounded">Edit profile picture</span></label>
+                  </div>
+              </div>
+  
+          </div>
+
+          <form>
+              <h5><i class='bx bxs-edit'></i> Edit profile data</h5>
+              <div class="standard">
+                  <input type="text" placeholder="First Name" required />
+              </div>
+              <div class="standard">
+                  <input type="text" placeholder="Last Name" required />
+              </div>
+              <div class="standard">
+                  <input type="email" placeholder="Email Address" required />
+              </div>
+              <div class="standard">
+                  <input type="password" placeholder="Old Password" required />
+              </div>
+              <div class="standard">
+                  <input type="password" placeholder="New Password" required />
+              </div>
+              
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn " data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn ">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    
+    <a href="UserAiAssistance.html" class="img-wrapper-robot">
+      <img src="assests/img/robot.png" alt="ai assistance" width="100%" />
+    </a>
+    <!--Start headline-->
+    <section class="headline">
+      <div class="headline-div">
+        <h1>Getting Trusted Lawyer Became Easy! </h1>
+        <p>
+          LawTec offers you an elite group of the most skilled lawyers and consultants in the field of law who have
+          achieved remarkable success recently. You can choose what is most suitable for you and you will certainly get
+          what you want in the fastest time and with the best quality.
+        </p>
+        <a href="UserAiAssistance.html" class="btn">Try Ai Assistance</a>
+      </div>
+
+    </section>
+    <!-- End headline -->
+
+
+    <section class="title" id="services">
+      <p>Meet Our Experts</p>
+      <h2>Qualified Attorneys</h2>
+
+      <!-- big div -->
+      <div class="lawyers-container">
+        <!-- sm1 -->
+        <div class="lawyers-catergory ">
+
+          <div>
+            <div class="search-recent-bots">
+              <input type="text" placeholder="Search for a trusted lawyer ... " />
+              <i class='bx bx-search-alt'></i>
+            </div>
+            <div class="cardandfilter">
+              <div class="filter-section">
+                <h3 class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#recentbots"
+                aria-controls="recentbots" aria-expanded="false" aria-label="Toggle navigation">Filter <i class='bx bx-filter'></i></h3>
+                <div class="collapse navbar-collapse show" id="recentbots">
+                <h4><i class='bx bxs-polygon'></i> Avialabilty</h4>
+                <div class="filter-option">
+                    <input type="checkbox" id="exp1">
+                    <label for="exp1">ASAP</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="exp2 ">
+                    <label for="exp2">Coming days</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="exp3">
+                    <label for="exp3">Month</label>
+                </div>
+                <h4><i class='bx bxs-polygon'></i> Session&nbsp;Price</h4>
+                <div class="filter-option">
+                    <input type="checkbox" id="exp4">
+                    <label for="exp4">15 $/session</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="exp5">
+                    <label for="exp5">20 $/session</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="exp6">
+                    <label for="exp6">Any price</label>
+                </div>
+                <h4><i class='bx bxs-polygon'></i> Attend&nbsp;Session</h4>
+                <div class="filter-option">
+                    <input type="checkbox" id="exp7">
+                    <label for="exp7">Highly</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="exp1">
+                    <label for="exp1">Medium</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="exp8">
+                    <label for="exp8">Low</label>
+                </div>
+              </div>
+
+            </div>
+            <div>
+
+              <div class="articles-div">
+                <div class="attorneys-cards">
+                  <div class="lawyer-card">
+                    <div class="img-wrapper">
+                      <img src="assests/img/old-lawyer.png" alt="Business laywer" width="100%">
+                    </div>
+                    <div class="lawyer-card-content">
+                      <h3>
+                        Takek Abd El Aziz
+                      </h3>
+                      <p>Business Law</p>
+                      <a href="singleLawyer.html">More Info</a>
+                    </div>
+                  </div>
+                  <div class="lawyer-card">
+                    <div class="img-wrapper">
+                      <img src="assests/img/lawyer-woman.jpg" alt="family laywer" width="100%">
+                    </div>
+                    <div class="lawyer-card-content">
+                      <h3>
+                        Marwa Othman
+                      </h3>
+                      <p>Family Law</p>
+                      <a href="singleLawyer.html">More Info</a>
+                    </div>
+                  </div>
+                  <div class="lawyer-card">
+                    <div class="img-wrapper">
+                      <img src="assests/img/young-lawyer.jpg" alt="criminal laywer" width="100%">
+                    </div>
+                    <div class="lawyer-card-content">
+                      <h3>
+                        Omar Methwally Hakm
+                      </h3>
+                      <p>Criminal Law</p>
+                      <a href="singleLawyer.html">More Info</a>
+                    </div>
+                  </div>
+                  <div class="lawyer-card">
+                    <div class="img-wrapper">
+                      <img src="assests/img/old-lawyer.png" alt="Business laywer" width="100%">
+                    </div>
+                    <div class="lawyer-card-content">
+                      <h3>
+                        Takek Abd El Aziz
+                      </h3>
+                      <p>Business Law</p>
+                      <a href="singleLawyer.html">More Info</a>
+                    </div>
+                  </div>
+                  <div class="lawyer-card">
+                    <div class="img-wrapper">
+                      <img src="assests/img/lawyer-woman.jpg" alt="family laywer" width="100%">
+                    </div>
+                    <div class="lawyer-card-content">
+                      <h3>
+                        Marwa Othman
+                      </h3>
+                      <p>Family Law</p>
+                      <a href="singleLawyer.html">More Info</a>
+                    </div>
+                  </div>
+                  <div class="lawyer-card">
+                    <div class="img-wrapper">
+                      <img src="assests/img/young-lawyer.jpg" alt="criminal laywer" width="100%">
+                    </div>
+                    <div class="lawyer-card-content">
+                      <h3>
+                        Omar Methwally Hakm
+                      </h3>
+                      <p>Criminal Law</p>
+                      <a href="singleLawyer.html">More Info</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- sm2 -->
+
+
+      </div>
+
+
+    </section>
+    <!-- End Services -->
+
+  </div>
+  <!-- Start Footer -->
+  <footer id="footer">
+    <div class="footer-info">
+      <div class="Trafalgar-logo-div">
+        <a href="#">
+        <div class="img-wrapper">
+
+          <img
+            src="assests/img/logo.png"
+            alt="tarfalgar logo img"
+            width="100%" />
+        </div>
+      </a>
+      </div>
+      <p>
+        Platform combines legal tradition with artificial intelligence to create a collaborative space where legal minds can shape the future of the profession.
+
+      </p>
+      <p>©LawTec team 2023. All rights reserved</p>
+    </div>
+    <div class="footer-contacts-lists">
+      <h6>Quick Links</h6>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="userHome.html#about-us">About</a></li>
+        <li><a href="lawyers.html">Attorneys</a></li>
+        <li><a href="LawyerNotification.html">Notifications</a></li>
+        <li><a href="booking.html">Book Appointment</a></li>
+        
+      </ul>
+    </div>
+    <div class="contact">
+      <h6>Contact Us</h6>
+      <p>In case you have any problem, Please feel free to contant us.</p>
+      <form>
+        <input type="text" placeholder="Your Name" required/>
+        <input type="email" placeholder="You Email" required/>
+        <textarea placeholder="Write down your problem ...."></textarea>
+        <button class="btn">Send</button>
+      </form>
+    
+    </div>
+    
+  </footer>
+  <!-- End footer -->
+
+
+  <!-- Javascript files -->
+  <script src="assests/js/bootstrap-js/bootstrap.min.js"></script>
+  <script src="assests/js/global.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+        <script src="assests/js/animations/lawyers.js"></script>
+    
+</body>
+
+</html>

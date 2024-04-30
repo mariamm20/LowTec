@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="LawTec is platform combines legal tradition with artificial intelligence to create a collaborative space where legal minds can shape the future of the profession." />
+    <meta name="keywords" content="Lowtec, online, lawyer, justice, consultant " />
+    <!-- Title -->
+    <title>LawTec</title>
+    <!-- favicon  -->
+    <link rel="icon" href="assests/img/logo-icon.ico" />
+    <!-- Icons CDN -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Css files -->
+    <link rel="stylesheet" href="assests/css/bootstrap-css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assests/css/global.css" />
+    <link rel="stylesheet" href="assests/css/notifications.css" />
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header class="lawyer">
+      <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="container-fluid img-wrapper">
+            <a class="navbar-brand" href="LawyerHome.html">
+              <img src="assests/img/logo.png" alt="logo image" width="100%" class="d-inline-block align-text-top">
+            </a>
+          </div>
+          <div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class='bx bx-menu'></i>
+            </button>
+            
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="LawyerHome.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="lawyerCalender.html">Appointments</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="LawyerBills.html">Bills Management</a>
+              </li>
+              <li class="nav-item">
+                <a href="Lawyerchat.html" class="position-relative nav-link">
+                  Messages
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                    <span class="visually-hidden">New alerts</span>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="LawyerNotification.html" class="position-relative nav-link">
+                  Notifications
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle notify">
+                    <span class="visually-hidden">New alerts</span>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+  
+  
+                <div class="btn-group">
+                  <button type="button" class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="user-data">
+                      <div class="img-wrapper">
+                        <img src="assests/img/profile.jpg" alt="user-img" width="100%" />
+                      </div>
+                      </div>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item">Tarek Abd El Aziz</li>
+                    <li><a class="dropdown-item" href="LawyerProfile.html">Profile</a></li>
+                    <li><a class="dropdown-item" href="LawyerProfile.html">Setting</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="Home.html">Logout</a></li>
+                  </ul>
+                </div>
+  
+  
+  
+              </li>
+  
+            </ul>
+  
+          </div>
+        </div>
+      </nav>
+  
+    </header>
+    <!-- End Header -->
+<div class="main" style="transform: none;">
+
+<div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            
+            <div class="modal-body">
+                <div class="profile">
+                    <div class="img-wrapper">
+                        <img src="assests/img/profile.jpg" alt="profile image" width="100%">
+                    </div>
+                    <div class="profile-data">
+                        <h4>Tarek Abd El Aziz</h4>
+                        <div class="in">
+                            <input type="file" accept=".png,.jpg,.jpeg,.gif" name="uploadfile" id="img"
+                                style="display:none;" onchange="javascript:showoneimg()" />
+                            <label for="img"><span id="delete-btn" class="material-symbols-rounded">Edit profile picture</span></label>
+                        </div>
+                    </div>
+        
+                </div>
+      
+                <form>
+                    <h5><i class='bx bxs-edit'></i> Edit profile data</h5>
+                    <div class="standard">
+                        <input type="text" placeholder="First Name" required />
+                    </div>
+                    <div class="standard">
+                        <input type="text" placeholder="Last Name" required />
+                    </div>
+                    <div class="standard">
+                        <input type="email" placeholder="Email Address" required />
+                    </div>
+                    <div class="standard">
+                        <input type="password" placeholder="Old Password" required />
+                    </div>
+                    <div class="standard">
+                        <input type="password" placeholder="New Password" required />
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn " data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn ">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Start Main -->
+    <div class="container" >
+
+      <!-- Modal -->
+ 
+        <header>
+            <div class="notif_box">
+              <h2 class="title">Notifications</h2>
+              <span id="notifes"></span>
+            </div>
+            <p id="mark_all">Mark all as read</p>
+          </header>
+          <main>
+            <div class="notif_card unread">
+              <img src="assests/img/avatar-mark-webber.webp" alt="avatar" />
+              <div class="description">
+                <p class="user_activity">
+                  <strong>Mark Webber</strong> booked an appointment with you
+                  <b>on the next 16 of november.</b>
+                </p>
+                <p class="time">1m ago</p>
+              </div>
+            </div>
+            <div class="notif_card unread">
+              <img src="assests/img/avatar-angela-gray.webp" alt="avatar" />
+              <div class="description">
+                <p class="user_activity">
+                  <strong>Angela Gray</strong> send you message 
+                </p>
+                <p class="time">5m ago</p>
+              </div>
+            </div>
+            <div class="notif_card unread">
+              <img src="assests/img/avatar-jacob-thompson.webp" alt="avatar" />
+              <div class="description">
+                <p class="user_activity">
+                  <strong>Jacob Thompson</strong> canceled the session
+                  <strong class="link">of 20 december</strong>
+                </p>
+                <p class="time">1 day ago</p>
+              </div>
+            </div>
+            <div>
+              <div class="notif_card">
+              <div class="message_card">
+                <img
+                src="assests/img/avatar-rizky-hasanuddin.webp"
+                alt="avatar"
+              />
+              <div class="description">
+                <p class="user_activity">
+                  <strong>Rizky Hasanuddin</strong> sent you a message
+                </p>
+                <p class="time">5 days ago</p>
+              </div>
+              </div>
+            </div>
+            
+            
+            <div class="notif_card">
+              <img src="assests/img/avatar-kimberly-smith.webp" alt="avatar" />
+              <div class="description">
+                <p class="user_activity">
+                  <strong>Kimberly Smith</strong> send a feed back about you 
+                </p>
+                <p class="time">1 week ago</p>
+              </div>
+              
+            </div>
+            <div class="notif_card">
+              <img src="assests/img/avatar-nathan-peterson.webp" alt="avatar" />
+              <div class="description">
+                <p class="user_activity">
+                  <strong>Nathan Pererson</strong> rated you with 5 starts
+                  <b>Cheers!</b>
+                </p>
+                <p class="time">2 weeks ago</p>
+              </div>
+            </div>
+            <div class="notif_card">
+              <img src="assests/img/avatar-anna-kim.webp" alt="avatar" />
+              <div class="description">
+                <p class="user_activity">
+                  <strong>Anna Kim</strong> rated you with 4 start 
+                  <strong class="link">Amazing</strong>
+                </p>
+                <p class="time">2 weeks ago</p>
+              </div>
+            </div>
+          </main>
+    
+
+
+
+     </div>
+    </div>
+         <!-- Javascript files -->
+    <script src="assests/js/bootstrap-js/bootstrap.min.js"></script>
+    <script src="assests/js/notifications.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    
+</body>
+
+</html>
+

@@ -1,0 +1,388 @@
+@font-face {
+    font-family: 'Playfair Display';
+    src: url(../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.woff2) format("woff2");
+}
+html{
+    overflow-x: hidden;
+}
+/* Headline Section: Section one */
+.headline-section {
+    height: 100vh;
+    position: relative;
+}
+
+.content {
+    position: relative;
+    background: rgba(2, 17, 36, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    flex-direction: column;
+    background-image: url("/assests/img/bg-video.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.content h1 {
+    color: var(--primary-color);
+    letter-spacing: 10px;
+    width: 430px;
+    line-height: 70px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+.content p {
+    letter-spacing: 3px;
+    width: 600px;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 35px;
+    margin: 15px 0 50px 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.content .btn {
+    position: relative;
+}
+
+.content .btn:hover:before {
+    color: #fff;
+}
+
+/* services Section: Section two */
+.services-section {
+    background-color: var(--light-bg);
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+
+}
+
+.services-section .img-wrapper {
+    width: 70px;
+    background-color: #d4c291;
+    padding: 14px 10px;
+}
+
+.card-service {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.card-service h3 {
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.card-service p {
+    margin: 0;
+    font-size: 1.3rem;
+
+}
+
+.card-service-details {
+    padding: 15px 60px 15px 30px;
+    background-color: var(--bg-color);
+
+}
+
+/* About section: section three */
+.about-section {
+    display: flex;
+    justify-content: center;
+    padding: 100px 50px;
+}
+
+.about-section div {
+    width: 40%;
+}
+
+.about-section .img-wrapper {
+    width: 450px;
+    box-shadow: -15px -15px 1px #d4c291;
+    margin-right: 50px;
+}
+
+.about-content h2 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1.5px;
+    color: var(--secondary-color);
+
+}
+
+.about-content p {
+    color: var(--secondary-color);
+    margin: 40px 0;
+}
+
+/* practice area style */
+.practiceArea-section {
+    background-color: var(--light-bg);
+    padding: 50px 0 0 0;
+}
+
+.title p {
+    color: var(--primary-color);
+    text-align: center;
+    margin: 0;
+}
+
+.title h2 {
+    text-align: center;
+}
+
+.title h2:before {
+    content: "";
+    position: absolute;
+    left: 48%;
+    top: 50px;
+    width: 60px;
+    height: 3px;
+    background: #c0b596;
+}
+
+.cards-practiceArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.card-practiceArea {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    height: 258.8px;
+}
+
+.card-practiceArea .img-wrapper {
+    width: 50px;
+    position: relative;
+}
+
+.card-practiceArea .img-wrapper:before {
+    content: " ";
+    position: absolute;
+    border: 1px solid #c0b596;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    top: -11px;
+    left: -13px;
+}
+
+.card-practiceArea-content {
+    margin-left: 35px;
+}
+
+.card-practiceArea-content p {
+    text-align: left !important;
+    width: 250px;
+    color: var(--font-color);
+    margin: 20px 0;
+    line-height: 30px;
+    font-size: 0.9rem;
+}
+
+.card-practiceArea-content h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--secondary-color);
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.card-practiceArea-content h3::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    width: 60px;
+    height: 3px;
+    background: #c0b596;
+}
+
+/* attorneys section style: section four*/
+.lawyer-card {
+    width: 300px;
+    text-align: center;
+    background-color: var(--light-bg);
+    margin: 20px;
+}
+
+.lawyer-card .img-wrapper {
+    width: 300px;
+}
+
+.lawyer-card-content {
+    padding-bottom: 10px;
+}
+
+.lawyer-card-content h3 {
+    color: var(--secondary-color);
+    font-family: 'Playfair Display', serif;
+    /* font-size: 1.5rem;
+    font-weight: 100;
+    margin: 20px 0 5px 0; */
+    padding: 30px 0 5px;
+    font-size: 24px;
+}
+
+.lawyer-card-content p {
+    margin-bottom: 10px;
+}
+
+.lawyer-card-content a {
+    color: var(--secondary-color);
+    visibility: hidden;
+}
+
+.lawyer-card-content {
+    position: relative;
+    margin-top: -40px;
+    background: #f5f5f5;
+    transform: translateY(40px);
+    transition: all .3s;
+
+}
+
+.lawyer-card:hover a {
+    visibility: visible;
+}
+
+.lawyer-card:hover .lawyer-card-content {
+    transform: translateY(0px);
+    background: #fff;
+    transition: 1s;
+}
+
+.attorneys-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.attorneys-section {
+    text-align: center;
+}
+
+@media (max-width:992px){
+    .content h1{
+        width: 80%;
+        text-align: center;
+        line-height: 40px;
+        letter-spacing: 2px;
+    }
+    .content p{
+        width: 80%;
+        letter-spacing: 1.5px;
+    }
+    .card-service-details {
+        padding: 15px 15px;
+        background-color: var(--bg-color);
+    }
+    .card-service p{
+        font-size: 1rem;
+    }
+    .services-section{
+        padding: 50px 0;
+    }
+    .services-section .img-wrapper{
+        width: 55px;
+    }
+    .services-section h3{
+        font-size: 0.6rem;
+    }
+    .about-section{
+        flex-wrap: wrap-reverse;
+        padding: 50px 10px;
+    }
+    
+    .about-section div{
+        margin-bottom: 70px;
+        width: 90%;
+    }
+    .card-practiceArea{
+        height: 150px;
+        margin: 20px 0;
+        padding: 0;
+    }
+    .card-practiceArea p{
+        width: 180px;
+    }
+    .cards-practiceArea{
+        
+        padding-bottom: 70px;
+    }
+    .attorneys-cards{
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media (max-width:660px) {
+    .services-section{
+        flex-wrap: wrap;
+
+    }
+}
+
+@media (max-width:440px) {
+    .services-section .card-service{
+        width: 90%;
+    }
+    .services-section .img-wrapper{
+        width: 70px;
+    }
+    .card-service-details{
+        width: 100%;
+    }
+    .title h2:before {
+        content: "";
+        position: absolute;
+        left: 41%;
+        top: 40px;
+        width: 60px;
+        height: 3px;
+        background: #c0b596;
+    }
+}
+
+.news .modal-content{
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+.news .modal-content .modal-header{
+    border: none;
+}
+.news .modal-body{
+    background-color: var(--secondary-color);
+}
+.news .modal-footer{
+    justify-content: center;
+    border: none !important;
+}
+.news .modal-footer .btn{
+    width: 95% !important;
+    margin: 0;
+}
+.news .modal-body{
+    height: auto;
+    overflow: auto;
+}
+.news .modal-body p{
+    margin: 25px 10px 0 10px;
+    line-height: 35px;
+}
+

@@ -1,0 +1,226 @@
+header nav {
+    background-color: transparent !important;
+    position: absolute;
+}
+body{
+    background-image: url('../img/login.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    background-color: rgba(2, 17, 36, 0.2);
+    background-blend-mode: overlay;
+}
+
+.main {
+    position: relative;
+    top: 0;
+}
+
+.main .img-wrapper {
+    width: 15rem;
+    z-index: 2;
+    position: absolute;
+    top: 1rem;
+    left: 10rem;
+}
+
+.img-wrapper-bg {
+    width: 35rem;
+
+}
+
+.img-wrapper-bg img {
+    height: 350px;
+}
+
+.register-two {
+    position: absolute;
+    top: 155px;
+    left: 150px;
+    text-align: center;
+}
+
+.register-two a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.register-two a:hover {
+    color: var(--seconadry-color);
+}
+
+.user-register-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-section form {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    width: 65%;
+    padding: 50px;
+    border-radius: 15px;
+
+}
+
+.icons-div {
+    margin: 0 0px 30px 0;
+    border-bottom: 1px solid #d4c291;
+    padding: 15px;
+
+}
+
+.icons-div a {
+    color: #fff !important;
+}
+
+.icons-div i:hover {
+    color: #d4c291;
+}
+
+.right-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    margin: 10px 0;
+}
+
+form input:focus {
+    outline: none;
+}
+
+form .btn {
+    margin-top: 10px;
+}
+
+form .btn:hover {
+    color: var(--font-color) !important;
+}
+
+/* Lawyer Register custome Style */
+
+.main .lawyer-register {
+    flex-direction: row-reverse;
+}
+
+.lawyer-register-main .left-section {
+    position: relative;
+}
+
+.lawyer-register .img-wrapper-bg img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.lawyer-register .register-two {
+    left: 190px;
+}
+
+
+/* Login custom Style */
+
+
+.login-main .right-section form {
+    width: 50%;
+}
+
+.login{
+    font-size: 0.9rem;
+    margin: 20px 0 0 0;
+}
+.login a{
+    color: #d4c291 !important;
+}
+
+@media (max-width:1140px) {
+    .user-register-section{
+        flex-wrap: wrap;
+    }
+    .main{
+        height: auto;
+    }
+    .right-section{
+        margin: 50px 0;
+    }
+}
+@media (max-width:992px) {
+    .right-section form{
+        width: 90%;
+    }
+    .login-main .right-section form {
+        width: 90%;
+    }
+    .login-main .right-section{
+        margin: 0;
+    }
+}
+@media (max-width:590px) {
+    .main .img-wrapper{
+        left: 0;
+        
+    }
+    .img-wrapper-bg{
+        width: 100%;
+
+    }
+    .img-wrapper-bg img{
+        height: 240px;
+    }
+    .register-two{
+        left: 20px;
+        top: 115px;
+    }
+    .right-section form{
+        padding: 50px 15px;
+
+    }
+    .main .lawyer-register{
+        flex-direction: row;
+    }
+    .lawyer-register .register-two {
+        left: 110px;
+    }
+}
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #fff;
+    font-size: 0.8rem;
+    margin: 10px 0;
+    text-align: left;
+}
+.input-control .error i{
+    color: #ff3860;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+} 
+
+.show-pass-div{
+    text-align: left;
+}
+.show-pass-div input{
+    width: auto;
+    margin: 10px;
+}
+.bx-show-alt{
+    padding: 14px 10px;
+    background-color: #d4c2915c !important;
+    border-radius: 0 15px 15px 0;
+    border: 1px solid #d4c291;
+    margin: 5px 0;
+}

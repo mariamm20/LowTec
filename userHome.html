@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="LawTec is platform combines legal tradition with artificial intelligence to create a collaborative space where legal minds can shape the future of the profession." />
+    <meta name="keywords" content="Lowtec, online, lawyer, justice, consultant " />
+    <!-- Title -->
+    <title>LawTec</title>
+    <!-- favicon  -->
+    <link rel="icon" href="assests/img/logo-icon.ico" />
+    <!-- Icons CDN -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Css files -->
+    <link rel="stylesheet" href="assests/css/bootstrap-css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assests/css/global.css" />
+    <link rel="stylesheet" href="assests/css/home.css" />
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="container-fluid img-wrapper">
+            <a class="navbar-brand" href="userHome.html">
+              <img src="assests/img/logo.png" alt="logo image" width="100%" class="d-inline-block align-text-top">
+            </a>
+          </div>
+          <div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class='bx bx-menu'></i>
+            </button>
+            
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="userHome.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="lawyers.html">Attorneys</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="customerBills.html">Your&nbsp;Bills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="userCalender.html">Appointments</a>
+              </li>
+              <li class="nav-item">
+                <a href="Userchat.html" class="position-relative nav-link">
+                  Messages
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                    <span class="visually-hidden">New alerts</span>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="UserNotification.html" class="position-relative nav-link">
+                  Notifications
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle notify">
+                    <span class="visually-hidden">New alerts</span>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+  
+  
+                <div class="btn-group">
+                  <button type="button" class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="user-data">
+                      <div class="img-wrapper">
+                        <img src="assests/img/profile.jpg" alt="user-img" width="100%" />
+                      </div>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item">Tarek Abd El Aziz</li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Setting</a></li>
+        
+
+
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="Home.html">Logout</a></li>
+                  </ul>
+                </div>
+  
+  
+  
+              </li>
+              <li class="nav-item ">
+                <a class="btn" href="booking.html">Book Appointment</a>
+              </li>
+  
+            </ul>
+  
+          </div>
+        </div>
+      </nav>
+  
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Main -->
+    <div class="main">
+       <!-- Modal -->
+       <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            
+            <div class="modal-body">
+                <div class="profile">
+                    <div class="img-wrapper">
+                        <img src="assests/img/profile.jpg" alt="profile image" width="100%">
+                    </div>
+                    <div class="profile-data">
+                        <h4>Tarek Abd El Aziz</h4>
+                        <div class="in">
+                            <input type="file" accept=".png,.jpg,.jpeg,.gif" name="uploadfile" id="img"
+                                style="display:none;" onchange="javascript:showoneimg()" />
+                            <label for="img"><span id="delete-btn" class="material-symbols-rounded">Edit profile picture</span></label>
+                        </div>
+                    </div>
+        
+                </div>
+      
+                <form>
+                    <h5><i class='bx bxs-edit'></i> Edit profile data</h5>
+                    <div class="standard">
+                        <input type="text" placeholder="First Name" required />
+                    </div>
+                    <div class="standard">
+                        <input type="text" placeholder="Last Name" required />
+                    </div>
+                    <div class="standard">
+                        <input type="email" placeholder="Email Address" required />
+                    </div>
+                    <div class="standard">
+                        <input type="password" placeholder="Old Password" required />
+                    </div>
+                    <div class="standard">
+                        <input type="password" placeholder="New Password" required />
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn " data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn ">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+        <a href="UserAiAssistance.html" class="img-wrapper-robot">
+            <img src="assests/img/robot.png" alt="ai assistance" width="100%"/>
+        </a>
+        <section class="solgan-section">
+            
+            <div class="content">
+                <h1>
+                   
+                    Building Legal Success Bridge
+                </h1>
+                <p>
+                    Platform combines legal tradition with artificial intelligence to create a collaborative space where legal minds can shape the future of the profession
+                </p>
+                <a href="UserAiAssistance.html" class="btn">Try AI Assistance</a>
+            </div>
+        </section>
+        <section class="services-section">
+            <div class="card-service">
+              <div class="img-wrapper">
+                <img src="assests/img/book.png" alt="book appointment" width="100%"/>
+              </div>
+              <div class="card-service-details">
+                <h3>
+                  Book
+                </h3>
+                <p>Appointment</p>
+              </div>
+            </div>
+            <div class="card-service">
+              <div class="img-wrapper">
+                <img src="assests/img/justice.png" alt="book appointment" width="100%"/>
+              </div>
+              <div class="card-service-details">
+                <h3>
+                  Get Trusted
+                </h3>
+                <p>Expert Advice</p>
+              </div>
+            </div>
+            <div class="card-service">
+              <div class="img-wrapper">
+                <img src="assests/img/team.png" alt="book appointment" width="100%"/>
+              </div>
+              <div class="card-service-details">
+                <h3>
+                  You Can Easily
+                </h3>
+                <p>Join Our Team</p>
+              </div>
+            </div>
+        </section>
+<section class="about-section" id="about-us">
+  <div class="img-wrapper">
+    <img src="assests/img/about .jpg" alt="lawyer photo" width="100%"/>
+  </div>
+  <div class="about-content">
+    <h2>
+      About Us
+    </h2>
+    <p>
+      This innovative law project utilizes cutting-edge artificial intelligence (AI) and legal expertise to assist users in navigating the complexities of the legal landscape. The platform provides assistance with understanding legal matters, offering insights, and providing preliminary guidance.
+    </p>
+    <p>
+      It also offers seamless integration to connect users with qualified lawyers specific to their case. This project not only leverages the power of AI but also ensures that the human element remains central, facilitating effective communication and support throughout the legal process.
+    </p>
+    <a class="mybtn-dark" href="#footer">Contact Us</a>
+  </div>
+</section>
+<section class="practiceArea-section title">
+  <p>Area of practice</p>
+  <h2>How Can We Help You</h2>
+  <div class="cards-practiceArea">
+    <div class="card-practiceArea">
+      <div class="img-wrapper">
+        <img src="assests/img/parents.png" alt="family law" width="100%">
+      </div>
+      <div class="card-practiceArea-content">
+        <h3>
+          Family Law
+        </h3>
+        <p>
+          Legal matters involving marriage, divorce, child custody, adoption, and domestic issues.
+        </p>
+      </div>
+    </div>
+    <div class="card-practiceArea">
+      <div class="img-wrapper">
+        <img src="assests/img/injury.png" alt="family law" width="100%">
+      </div>
+      <div class="card-practiceArea-content">
+        <h3>
+          Personal Injury
+        </h3>
+        <p>
+          Seeking compensation for injuries caused by others' negligence.
+        </p>
+      </div>
+    </div>
+    <div class="card-practiceArea">
+      <div class="img-wrapper">
+        <img src="assests/img/groom.png" alt="family law" width="100%">
+      </div>
+      <div class="card-practiceArea-content">
+        <h3>
+          Business Law
+        </h3>
+        <p>
+          Legal rules and regulations governing commercial transactions and operations.        </p>
+      </div>
+    </div>
+    <div class="card-practiceArea">
+      <div class="img-wrapper">
+        <img src="assests/img/robber.png" alt="family law" width="100%">
+      </div>
+      <div class="card-practiceArea-content">
+        <h3>
+          Criminal Law
+        </h3>
+        <p>
+          Legal system addressing societal offenses and their consequences.        </p>
+      </div>
+    </div>
+    <div class="card-practiceArea">
+      <div class="img-wrapper">
+        <img src="assests/img/mortarboard.png" alt="family law" width="100%">
+      </div>
+      <div class="card-practiceArea-content">
+        <h3>
+          Education Law
+        </h3>
+        <p>
+          Legal regulations and rights pertaining to educational institutions and students.        </p>
+      </div>
+    </div>
+    <div class="card-practiceArea">
+      <div class="img-wrapper">
+        <img src="assests/img/court.png" alt="family law" width="100%">
+      </div>
+      <div class="card-practiceArea-content">
+        <h3>
+          Real Estate Law
+        </h3>
+        <p>
+          Legal rules and regulations governing property ownership, transactions, and related matters.        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="attorneys-section title">
+  <p>Meet Our Experts</p>
+  <h2>Qualified Attorneys</h2>
+  <div class="attorneys-cards">
+    <div class="lawyer-card">
+      <div class="img-wrapper">
+        <img src="assests/img/old-lawyer.png" alt="Business laywer" width="100%">
+      </div>
+      <div class="lawyer-card-content">
+        <h3>
+          Takek Abd El Aziz
+        </h3>
+        <p>Business Law</p>
+        <a href="singleLawyer.html">More Info</a>
+      </div>
+    </div>
+    <div class="lawyer-card">
+      <div class="img-wrapper">
+        <img src="assests/img/lawyer-woman.jpg" alt="family laywer" width="100%">
+      </div>
+      <div class="lawyer-card-content">
+        <h3>
+          Marwa Othman
+        </h3>
+        <p>Family Law</p>
+        <a href="singleLawyer.html">More Info</a>
+      </div>
+    </div>
+    <div class="lawyer-card">
+      <div class="img-wrapper">
+        <img src="assests/img/young-lawyer.jpg" alt="criminal laywer" width="100%">
+      </div>
+      <div class="lawyer-card-content">
+        <h3>
+         Omar Methwally Hakm
+        </h3>
+        <p>Criminal Law</p>
+        <a href="singleLawyer.html">More Info</a>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <a href="lawyers.html" class="btn">Discover More</a>
+      
+</section>
+
+
+    </div>
+    <!-- End Main -->
+
+    <!-- Start Footer -->
+    <footer id="footer">
+      <div class="footer-info">
+        <div class="Trafalgar-logo-div">
+          <a href="#">
+          <div class="img-wrapper">
+
+            <img
+              src="assests/img/logo.png"
+              alt="tarfalgar logo img"
+              width="100%" />
+          </div>
+        </a>
+        </div>
+        <p>
+          Platform combines legal tradition with artificial intelligence to create a collaborative space where legal minds can shape the future of the profession.
+
+        </p>
+        <p>©LawTec team 2023. All rights reserved</p>
+      </div>
+      <div class="footer-contacts-lists">
+        <h6>Quick Links</h6>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about-us">About</a></li>
+          <li><a href="lawyers.html">Attorneys</a></li>
+          <li><a href="notification.html">Notifications</a></li>
+          <li><a href="booking.html">Book Appointment</a></li>
+          
+        </ul>
+      </div>
+      <div class="contact">
+        <h6>Contact Us</h6>
+        <p>In case you have any problem, Please feel free to contant us.</p>
+        <form>
+          <input type="text" placeholder="Your Name" required/>
+          <input type="email" placeholder="You Email" required/>
+          <textarea placeholder="Write down your problem ...."></textarea>
+          <button class="btn">Send</button>
+        </form>
+      
+      </div>
+      
+    </footer>
+    <!-- End footer -->
+
+
+    <!-- Javascript files -->
+    <script src="assests/js/bootstrap-js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="assests/js/global.js"></script>
+    <script src="assests/js/animations/animations.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="LawTec is platform combines legal tradition with artificial intelligence to create a collaborative space where legal minds can shape the future of the profession." />
+    <meta name="keywords" content="Lowtec, online, lawyer, justice, consultant " />
+    <!-- Title -->
+    <title>LawTec</title>
+    <!-- favicon  -->
+    <link rel="icon" href="assests/img/logo-icon.ico" />
+    <!-- Icons CDN -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+    
+    <!-- Css files -->
+    <link rel="stylesheet" href="assests/css/bootstrap-css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assests/css/global.css" />
+    <link rel="stylesheet" href="assests/css/bills.css" />
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header class="lawyer">
+      <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="container-fluid img-wrapper">
+            <a class="navbar-brand" href="LawyerHome.html">
+              <img src="assests/img/logo.png" alt="logo image" width="100%" class="d-inline-block align-text-top">
+            </a>
+          </div>
+          <div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class='bx bx-menu'></i>
+            </button>
+            
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="LawyerHome.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="lawyerCalender.html">Appointments</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="LawyerBills.html">Bills Management</a>
+              </li>
+              <li class="nav-item">
+                <a href="Lawyerchat.html" class="position-relative nav-link">
+                  Messages
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                    <span class="visually-hidden">New alerts</span>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="LawyerNotification.html" class="position-relative nav-link">
+                  Notifications
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle notify">
+                    <span class="visually-hidden">New alerts</span>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+  
+  
+                <div class="btn-group">
+                  <button type="button" class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="user-data">
+                      <div class="img-wrapper">
+                        <img src="assests/img/profile.jpg" alt="user-img" width="100%" />
+                      </div>
+                      </div>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item">Tarek Abd El Aziz</li>
+                    <li><a class="dropdown-item" href="LawyerProfile.html">Profile</a></li>
+                    <li><a class="dropdown-item" href="LawyerProfile.html">Setting</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="Home.html">Logout</a></li>
+                  </ul>
+                </div>
+  
+  
+  
+              </li>
+  
+            </ul>
+  
+          </div>
+        </div>
+      </nav>
+  
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Main -->
+    <div class="main">
+
+    <!--Start headline-->
+    <section class="headline">
+        <div class="headline-div">
+          <h1>Manage Your Bills Easy! </h1>
+          <p>LowTec provide you an easy way to manage your bills with your customers. Create, Modify and remove a bill is now here and simply.</p>
+        </div>
+  
+      </section>
+      <!-- End headline -->
+
+
+
+        <div class="container">
+            <div class="table-wrapper">
+              <div class="table-title">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <h2>Manage <b>Your Bills</b></h2>
+                  </div>
+                  <div class="col-sm-6">
+                    <a href="#" class="btn"data-bs-target="#addEmployeeModal" data-bs-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Bill</span></a>
+                  </div>
+                </div>
+              </div>
+              <table class="table  table-hover">
+                <thead>
+                  <tr>
+                    <th>Bill ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1002</td>
+                    <td>Morad Shawky</td>
+                    <td>morad_shawky20@mail.com</td>
+                    <td>40$</td>
+                    <td>Family case the first pleading</td>
+                    <td>Pending</td>
+                    <td>
+                      <a href="#" class="edit" data-bs-target="#editEmployeeModal" data-bs-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                      <a href="#" class="delete" data-bs-target="#deleteEmployeeModal" data-bs-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete" >&#xE872;</i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1003</td>
+                    <td>Morad Shawky</td>
+                    <td>morad_shawky20@mail.com</td>
+                    <td>40$</td>
+                    <td>Family case the first pleading</td>
+                    <td>Pending</td>
+                    <td>
+                      <a href="#" class="edit" data-bs-target="#editEmployeeModal" data-bs-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                      <a href="#" class="delete" data-bs-target="#deleteEmployeeModal" data-bs-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete" >&#xE872;</i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1004</td>
+                    <td>Morad Shawky</td>
+                    <td>morad_shawky20@mail.com</td>
+                    <td>40$</td>
+                    <td>Family case the first pleading</td>
+                    <td>Paid</td>
+                    <td>
+                      <a href="#" class="edit" data-bs-target="#editEmployeeModal" data-bs-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                      <a href="#" class="delete" data-bs-target="#deleteEmployeeModal" data-bs-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete" >&#xE872;</i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1005</td>
+                    <td>Morad Shawky</td>
+                    <td>morad_shawky20@mail.com</td>
+                    <td>40$</td>
+                    <td>Family case the first pleading</td>
+                    <td>Paid</td>
+                    <td>
+                      <a href="#" class="edit" data-bs-target="#editEmployeeModal" data-bs-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                      <a href="#" class="delete" data-bs-target="#deleteEmployeeModal" data-bs-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete" >&#xE872;</i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1006</td>
+                    <td>Morad Shawky</td>
+                    <td>morad_shawky20@mail.com</td>
+                    <td>40$</td>
+                    <td>Family case the first pleading</td>
+                    <td>Cancelled</td>
+                    <td>
+                      <a href="#" class="edit" data-bs-target="#editEmployeeModal" data-bs-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                      <a href="#" class="delete" data-bs-target="#deleteEmployeeModal" data-bs-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete" >&#xE872;</i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1007</td>
+                    <td>Morad Shawky</td>
+                    <td>morad_shawky20@mail.com</td>
+                    <td>40$</td>
+                    <td>Family case the first pleading</td>
+                    <td>Paid</td>
+                    <td>
+                      <a href="#" class="edit" data-bs-target="#editEmployeeModal" data-bs-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                      <a href="#" class="delete" data-bs-target="#deleteEmployeeModal" data-bs-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete" >&#xE872;</i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1008</td>
+                    <td>Morad Shawky</td>
+                    <td>morad_shawky20@mail.com</td>
+                    <td>40$</td>
+                    <td>Family case the first pleading</td>
+                    <td>Cancelled</td>
+                    <td>
+                      <a href="#" class="edit" data-bs-target="#editEmployeeModal" data-bs-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                      <a href="#" class="delete" data-bs-target="#deleteEmployeeModal" data-bs-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete" >&#xE872;</i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1009</td>
+                    <td>Morad Shawky</td>
+                    <td>morad_shawky20@mail.com</td>
+                    <td>40$</td>
+                    <td>Family case the first pleading</td>
+                    <td>Cancelled</td>
+                    <td>
+                      <a href="#" class="edit" data-bs-target="#editEmployeeModal" data-bs-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                      <a href="#" class="delete" data-bs-target="#deleteEmployeeModal" data-bs-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete" >&#xE872;</i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1010</td>
+                    <td>Morad Shawky</td>
+                    <td>morad_shawky20@mail.com</td>
+                    <td>40$</td>
+                    <td>Family case the first pleading</td>
+                    <td>Paid</td>
+                    <td>
+                      <a href="#" class="edit" data-bs-target="#editEmployeeModal" data-bs-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                      <a href="#" class="delete" data-bs-target="#deleteEmployeeModal" data-bs-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete" >&#xE872;</i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1011</td>
+                    <td>Morad Shawky</td>
+                    <td>morad_shawky20@mail.com</td>
+                    <td>40$</td>
+                    <td>Family case the first pleading</td>
+                    <td>Paid</td>
+                    <td>
+                      <a href="#" class="edit" data-bs-target="#editEmployeeModal" data-bs-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                      <a href="#" class="delete" data-bs-target="#deleteEmployeeModal" data-bs-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete" >&#xE872;</i></a>
+                    </td>
+                  </tr>
+                  
+                  
+                  
+                </tbody>
+              </table>
+              <div class="clearfix">
+                <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
+                <ul class="pagination">
+                  <li class="page-item disabled"><a href="#">Previous</a></li>
+                  <li class="page-item"><a href="#" class="page-link">1</a></li>
+                  <li class="page-item"><a href="#" class="page-link">2</a></li>
+                  <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                  <li class="page-item"><a href="#" class="page-link">4</a></li>
+                  <li class="page-item"><a href="#" class="page-link">5</a></li>
+                  <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Edit Modal HTML -->
+          <div id="addEmployeeModal" class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <form>
+                 
+                  <div class="modal-body">
+                    <h4 class="modal-title">Add New Bill</h4>
+                    <div class="form-group">
+                      
+                      <input type="text" placeholder="Username of customer"  required>
+                    </div>
+                    <div class="form-group">
+                      
+                      <input type="email" placeholder="Email of customer"  required>
+                    </div>
+                    <div class="form-group">
+                      
+                      <textarea  placeholder="Description" required></textarea>
+                    </div>
+                    <div class="form-group">
+                      
+                      <input type="number" placeholder="Price of bill"  required>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    
+                    <input type="submit" class="btn" value="Add">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Edit Modal HTML -->
+          <div id="editEmployeeModal" class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <form>
+                  
+                  <div class="modal-body">
+                    <h4 class="modal-title">Edit Bill</h4>
+                    <div class="form-group">
+                      
+                      <input type="text" placeholder="Username of customer"  required>
+                    </div>
+                    <div class="form-group">
+                      
+                      <input type="email" placeholder="Email of customer"  required>
+                    </div>
+                    <div class="form-group">
+                      
+                      <textarea  placeholder="Description" required></textarea>
+                    </div>
+                    <div class="form-group">
+                      
+                      <input type="number" placeholder="Price of bill"  required>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    
+                    <input type="submit" class="btn" value="Save">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Delete Modal HTML -->
+          <div id="deleteEmployeeModal" class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <form>
+                  <div class="modal-header">
+                    <h4 class="modal-title">Delete Employee</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>Are you sure you want to delete these Records?</p>
+                    <p class="text-danger"><small>This action cannot be undone.</small></p>
+                  </div>
+                  <div class="modal-footer">
+                    <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                    <input type="submit" class="btn btn-danger" value="Delete" data-bs-target="#deleteEmployeeModal">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+            <!-- Start Footer -->
+    <footer id="footer">
+        <div class="footer-info">
+          <div class="Trafalgar-logo-div">
+            <a href="LawyerHome.html">
+            <div class="img-wrapper">
+              <img
+                src="assests/img/logo.png"
+                alt="tarfalgar logo img"
+                width="100%" />
+            </div>
+          </a>
+          </div>
+          <p>
+            Platform combines legal tradition with artificial intelligence to create a collaborative space where legal minds can shape the future of the profession.
+  
+          </p>
+          <p>©Lawtec team 2023. All rights reserved</p>
+        </div>
+        <div class="footer-contacts-lists">
+          <h6>Quick Links</h6>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about-us">About</a></li>
+            <li><a href="lawyerCalender.html">Appointments</a></li>
+            <li><a href="Lawyerchat.html">Messages</a></li>
+            <li><a href="LawyerNotification.html">Notifications</a></li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h6>Contact Us</h6>
+          <p>In case you have any problem, Please feel free to contant us.</p>
+          <form>
+            <input type="text" placeholder="Your Name" required/>
+            <input type="email" placeholder="You Email" required/>
+            <textarea placeholder="Write down your problem ...."></textarea>
+            <button class="btn">Send</button>
+          </form>
+        
+        </div>
+        
+      </footer>
+      <!-- End footer -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>  
+        <script src="assests/js/bootstrap-js/bootstrap.min.js"></script>
+        <script src="assests/js/animations/bills.js"></script>
+
+        </body>
+        </html>

@@ -1,0 +1,184 @@
+.content{
+    width: 100%;
+    padding: 50px 160px;
+    color: var(--secodary-color);
+}
+
+.content .img-wrapper{
+    width: 100px;
+}
+.book-info{
+    font-size: 16px;
+    line-height: 35px;
+    width: 540px;
+    color: var(--font-color);
+}
+
+.about  h2{
+
+    font-weight: bold;
+}
+.about h2 span {
+    color: #e55865;
+    font-size: 14px;
+    font-style: normal;
+}
+.about {
+    padding: 0;
+    position: relative;
+    top:7px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0;
+}
+.head-table .line{
+    position: absolute;
+    top:33px
+}
+.standard{
+    padding: 0;
+    width: 70%;
+    margin: 10px 0;
+}
+.content form input{
+    background-color: var(--bg-color);
+}
+.content form input::placeholder{
+    color: var(--secodary-color);
+}
+.standard input{
+    margin-bottom: 12px;
+    padding: 15px;
+    border-radius: 15px;
+    outline:none;
+    width: 100%;
+}
+.standard input[disabled]{
+    background-color: #eee;
+
+}
+.standard textarea{
+    margin-bottom: 12px;
+    padding: 7px;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color) !important;
+    background-color: var(--bg-color);
+    outline-color: #2dbdd3;
+    width: 100%;
+    color: #1c2750;
+}
+textarea::placeholder{
+    color: #1c2750;
+}
+.standard select{
+    margin-bottom: 12px;
+    padding: 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 15px;
+    outline:none;
+    width: 100%;
+    background-color: #fff;
+}
+.top{
+    position: relative;
+
+}
+form{padding: 0;}
+
+ .custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'Browse';
+  display: inline-block;
+  
+  color: #2dbdd3;
+  outline: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 500;
+  font-size: 16px;
+}
+.add-image{
+    display: flex;
+    justify-content: space-between;
+}
+.add-image p{
+    width: 50%;
+    padding: 0;
+}
+.add-image label{
+    padding: 0 5px 0 0;
+    color: #0097FF;
+    cursor: pointer;
+}
+.add-image .in{
+    padding: 0;
+}
+.add-image i{
+    color: #0097FF;
+}
+.top ul{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 12px;
+    padding: 15px;
+    border: 1px solid #1c2750;
+    border-radius: 15px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    outline-color: #2dbdd3;
+    width: 70%;
+    color: var(--secodary-color);
+    font-size: 14px;
+    display: none;
+}
+.add-image span{
+    color: red;
+    font-size: 10px;
+    display: none;
+}
+
+.save{
+    width: 510px;
+    text-align: right;
+
+}
+.save button{
+    background-color: #1c2750;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 6px 30px;
+    
+}
+.save button:hover{
+    background-color: #e0eef6;
+    color: #1c2750;
+    
+}
+
+
+@media (max-width:992px){
+    .standard{
+        width: 100%;
+    }
+    .content{
+        padding: 20px 20px;
+    }
+    .content .img-wrapper{
+        bottom: 30px;
+        position: relative;
+    }
+    .book-info{
+        width: 90%;
+    }
+}
+
+@media (max-width:480px){
+    .content .img-wrapper{
+        display: none
+    }
+}

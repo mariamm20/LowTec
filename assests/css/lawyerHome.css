@@ -1,0 +1,360 @@
+.content-page{
+  padding: 0 20px;
+}
+.card{
+  padding: 20px;
+  padding-bottom: 0;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: 1px 1px 3px var(--primary-color);
+}
+.card h4{
+  font-size: 1.5rem;
+  color: rgb(0, 166, 255);
+  font-family: 'Playfair Display', serif;
+}
+.card p{
+  font-size: 1rem;
+  color: var(--secondary-color) !important;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--primary-color);
+  width: 100%;
+}
+
+.card p:hover{
+  color: rgb(0, 166, 255) !important;
+  transition: .5s;
+  cursor: pointer;
+}
+.important h4{
+ color: rgb(29, 225, 7);
+}
+.important .card-details p:hover{
+  color: rgb(29, 225, 7) !important;
+}
+
+.cancel h4{
+  color: rgb(183, 24, 3);
+ }
+ .cancel .card-details p:hover{
+   color: rgb(183, 24, 3) !important;
+ }
+
+.wrapper{
+    margin: 50px 0;
+}
+.form-check{
+  box-shadow: 0 2px 3px #eee  ;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+.notification-num  a{
+  color:tomato
+}
+.ai-btn{
+  position: fixed;
+  bottom: 10%;
+  right: 4%;
+  z-index: 2;
+  background-color: #0e4668;
+  border-radius: 50%;
+  border: 1px solid #eee;
+}
+.form-check-label{
+  position: relative;
+  left: 20px;
+}
+.iq-card .modal-title {
+    position: relative;
+    color: #0e4668;
+    margin-bottom: 0px;
+}
+.iq-card .modal-title h4::before{
+    content: " " !important;
+    position: absolute;
+    top: 40px;
+    background: var(--primary-color);
+    height: 3px;
+    width: 70px;
+
+}
+
+/* Calender buttons */
+.fc .fc-button-primary {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    border-color: var(--primary-color);
+}
+.fc .fc-col-header-cell-cushion {
+    color: #0e4668;
+    text-decoration: none;
+    padding: 10px 0;
+}
+thead{
+    background-color: var(--primary-color);
+    border-radius: 15px 15px 0 0;
+}
+.iq-card-header-toolbar{
+width: 100%;
+}
+.add{
+    position: relative;
+    bottom: 10px;
+    left: 83%;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  position: absolute;
+  left: -85px;
+  top: 100%;
+}
+.modal-body {
+  background-color: var(--light-bg);
+  height: 80vh;
+  overflow-y: hidden;
+}
+.timeFilter{
+  display: flex;
+  align-items: center;
+}
+.timeFilter input{
+  width: auto !important;
+}
+.timeFilter div{
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px !important;
+  width: 100%;
+}
+.timeFilter i{
+  text-align: right;
+  position: relative;
+    top: 11px;
+}
+.btns-modal{
+  position: absolute;
+  bottom: 0;
+  width: 94% !important;
+  display: flex;
+}
+
+.modal-body {
+  position: relative;
+  padding: 20px 20px 70px 20px;
+}
+.btns-modal {
+  position: absolute;
+  bottom: 0;
+  width: 94% !important;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.btns-modal .btn {
+  height: 3rem;
+  font-size: 0.9rem;
+  width: 43%;
+  padding: 0 !important;
+  margin: 0 10px ;
+}
+.add-date-time .bx-trash{
+  color: var(--heading-color);
+}
+.timeFilter div:nth-child(3){
+  width: 10% !important;
+}
+.date-custom div:nth-child(2){
+  width: 6%;
+}
+
+
+
+/* Style Modal*/
+/* .modal-content{
+  display:flex;
+  flex-direction: column;
+  background-color: var(--light-bg);
+  color: #FFF;
+  padding: 35px 15px;
+} */
+.modal-body .modal-title {
+  color: var(--secondary-color);
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+.modal-body i{
+  color: var(--primary-color);
+}
+.modal-header .hello-section h5{
+  color: #FFF;
+  font-size: 20px;
+  margin: 0;
+}
+.modal-header .hello-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.modal-header p{
+  color: #eee;
+margin: 0;
+font-style: italic;
+}
+.close-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+}
+.close-title button{
+  font-size: 32px;
+  color: #FFF !important;
+  position: relative;
+  right: 10px;
+}
+/* Typing container styling */
+
+.typing-container{
+  width: auto;
+  position: relative;
+}
+.get-started{
+  font-size: 1.5rem;
+}
+.chat-container {
+  padding: 0;
+}
+.typing-textarea textarea {
+  resize: none;
+  height: 55px !important;
+  width: 100%;
+  border: none;
+  padding: 15px 45px 15px 20px;
+  color: var(--text-color);
+  font-size: 1rem;
+  border-radius: 35px;
+  max-height: 250px;
+  overflow-y: hidden;
+  background: var(--incoming-chat-bg);
+  outline: 1px solid var(--incoming-chat-border);
+}
+.modal-content input {
+  width: 100%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: 2px solid var(--primary-color);
+    margin: 10px 0;
+}
+.modal-content input::placeholder{
+  color: #0e4668;
+}
+.modal-content input:focus{
+  outline: none;
+}
+.iq-card-header .modal-body{
+  height: auto;
+}
+
+
+.event h4{
+  font-size: 16px;
+  color: var(--font-color);
+}
+.submit-btn{
+  color: #FFF;
+  background-color: #0e4668;
+
+}
+.submit-btn:hover{
+  color: #0e4668;
+  background-color: var(--primary-color);
+}
+.typing-container {
+  bottom: 100px;
+  position: absolute;
+  bottom: 0;
+  width: 97%;
+}
+.chat-container{
+  padding-bottom: 400px;
+}
+.modal-header{
+  background-color: var(--light-bg);
+  color: var(--secondary-color);
+}
+
+.btns-modal .btn i{
+  color: var(--secondary-color) !important; 
+}
+
+@media (max-width:992px) {
+  .row{
+    flex-wrap: wrap;
+  }
+  .col-md-3{
+    width: 100% !important;
+    margin-top: 30px;
+    padding: 0;
+  }
+  .col-md-9{
+    width: 100% !important;
+    margin: 50px 0;
+  }
+  .fc .fc-toolbar.fc-header-toolbar {
+    margin-bottom: 1.5em;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.fc-toolbar-chunk{
+  margin-bottom: 8px;
+}
+.add {
+  position: relative;
+  bottom: 35px;
+  width: 100%;
+  left: 0%;
+  margin: 0;
+}
+.wrapper{
+  margin: 0;
+}
+.typing-container textarea::placeholder{
+  color: #0e4668;
+  font-size: 0.7rem;
+}
+.typing-content span {
+  width: 50px;
+  height: 50px;
+}
+.container{
+  padding: 0;
+}
+.btns-modal .btn{
+  font-size: 0.8rem;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

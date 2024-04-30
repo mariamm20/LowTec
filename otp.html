@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="LawTec is platform combines legal tradition with artificial intelligence to create a collaborative space where legal minds can shape the future of the profession." />
+    <meta name="keywords" content="Lowtec, online, lawyer, justice, consultant " />
+    <!-- Title -->
+    <title>LawTec</title>
+    <!-- favicon  -->
+    <link rel="icon" href="assests/img/logo-icon.ico" />
+    <!-- Icons CDN -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Css files -->
+    <link rel="stylesheet" href="assests/css/bootstrap-css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assests/css/global.css" />
+    <link rel="stylesheet" href="assests/css/otp.css" />
+</head>
+
+<body>
+    <div class="opt-main">
+        <div class="otp-card">
+            <h1>OTP Verification</h1>
+            <p>Code has been sent to Haj****@gmail.com</p>
+            <form id="form" action="/">
+                <div class="otp-card-inputs">
+                    <input type="number" onkeyup="movetoNext(this,'no2')"
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                        id="no1" maxlength="1" autofocus required />
+                    <input type="number" onkeyup="movetoNext(this,'no3')"
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                        id="no2" maxlength="1" required />
+                    <input type="number" onkeyup="movetoNext(this,'no4')"
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                        id="no3" maxlength="1" required />
+                    <input type="number" onkeyup="movetoNext(this,'no5')"
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                        id="no4" maxlength="1" required />
+                    <input type="number"
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                        id="no5" maxlength="1" required />
+                </div>
+                <div id="textbox">veri</div>
+                <div class="timerDiv">
+                    <p id="timer"></p>
+                    <p class="resend">Didn't get the otp <a href="#" >Resend</a></p>
+                
+                </div>
+                <button type="submit" class="btn" id="btn">Verify</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="assests/js/animations/otp.js"></script>
+    <script src="assests/js/otp.js" defer></script>
+</body>
+
+</html>

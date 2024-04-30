@@ -1,0 +1,149 @@
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f8fc;
+  height: 100vh;
+  background-color: #d4c291;
+}
+
+h1 {
+  margin: 0;
+}
+
+.otp-card {
+  text-align: center;
+  background-color: var(--light-bg);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 10px 40px -20px black;
+  color: var(--secondary-color);
+
+}
+
+.otp-card-inputs {
+  display: grid;
+  margin: 30px 0;
+  gap: 30px;
+  justify-content: center;
+  grid-template-columns: repeat(5, auto);
+}
+
+.otp-card-inputs input {
+  width: 60px;
+  height: 60px;
+  font-size: 35px;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid #d4c291;
+
+}
+
+.otp-card-inputs input:focus {
+  outline: 1px solid #d4c291;
+  border-color: transparent;
+}
+
+.otp-card a {
+  color: var(--secondary-color);
+}
+
+.otp-card .btn {
+  padding: 10px 40px !important;
+}
+
+.otp-card button:hover {
+  opacity: .9;
+  background-color: #05283d;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+form {
+  text-align: center;
+  
+}
+form input{
+  padding: 0;
+}
+.timerDiv{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.timerDiv .timer{
+  color: var(--heading-color);
+}
+#textbox{
+  text-align: left;
+  color: var(--heading-color);
+  display: none;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:540px) {
+  .otp-card {
+    text-align: center;
+    background-color: var(--light-bg);
+    border-radius: 20px;
+    padding: 3rem 1rem;
+    box-shadow: 0 10px 40px -20px black;
+    color: var(--secondary-color);
+    margin: 10px;
+  
+  }
+  .otp-card-inputs input {
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #d4c291;
+  
+  }
+  .opt-main{
+    overflow: hidden;
+  }
+  .otp-card-inputs {
+    display: grid;
+    margin: 30px 0;
+    gap: 5px;
+    justify-content: center;
+    grid-template-columns: repeat(5, auto);
+  }
+}

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="LawTec is platform combines legal tradition with artificial intelligence to create a collaborative space where legal minds can shape the future of the profession." />
+    <meta name="keywords" content="Lowtec, online, lawyer, justice, consultant " />
+    <!-- Title -->
+    <title>LawTec</title>
+    <!-- favicon  -->
+    <link rel="icon" href="assests/img/logo-icon.ico" />
+    <!-- Icons CDN -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Css files -->
+    <link rel="stylesheet" href="assests/css/bootstrap-css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assests/css/global.css" />
+    <link rel="stylesheet" href="assests/css/aiAssistance.css" />
+    <link rel="stylesheet" href="assests/css/chatting.css" />
+
+</head>
+
+<body class="gpt">
+    <!-- Start Header -->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="container-fluid img-wrapper">
+            <a class="navbar-brand" href="userHome.html">
+              <img src="assests/img/logo.png" alt="logo image" width="100%" class="d-inline-block align-text-top">
+            </a>
+          </div>
+          <div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class='bx bx-menu'></i>
+            </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#recentbots" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class='bx bx-conversation'></i>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="userHome.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="lawyers.html">Attorneys</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="customerBills.html">Your&nbsp;Bills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="userCalender.html">Appointments</a>
+              </li>
+              <li class="nav-item">
+                <a href="Userchat.html" class="position-relative nav-link">
+                  Messages
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                    <span class="visually-hidden">New alerts</span>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="UserNotification.html" class="position-relative nav-link">
+                  Notifications
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle notify">
+                    <span class="visually-hidden">New alerts</span>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+  
+  
+                <div class="btn-group">
+                  <button type="button" class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="user-data">
+                      <div class="img-wrapper">
+                        <img src="assests/img/profile.jpg" alt="user-img" width="100%" />
+                      </div>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item">Tarek Abd El Aziz</li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Setting</a></li>
+        
+
+
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="Home.html">Logout</a></li>
+                  </ul>
+                </div>
+  
+  
+  
+              </li>
+              <li class="nav-item ">
+                <a class="btn" href="booking.html">Book Appointment</a>
+              </li>
+  
+            </ul>
+  
+          </div>
+        </div>
+      </nav>
+  
+    </header>
+    <!-- End Header -->
+
+    <!-- Main Section -->
+    <section class="main gpt-main-section">
+
+      <!-- Modal -->
+      <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            
+            <div class="modal-body">
+                <div class="profile">
+                    <div class="img-wrapper">
+                        <img src="assests/img/profile.jpg" alt="profile image" width="100%">
+                    </div>
+                    <div class="profile-data">
+                        <h4>Tarek Abd El Aziz</h4>
+                        <div class="in">
+                            <input type="file" accept=".png,.jpg,.jpeg,.gif" name="uploadfile" id="img"
+                                style="display:none;" onchange="javascript:showoneimg()" />
+                            <label for="img"><span id="delete-btn" class="material-symbols-rounded">Edit profile picture</span></label>
+                        </div>
+                    </div>
+        
+                </div>
+      
+                <form>
+                    <h5><i class='bx bxs-edit'></i> Edit profile data</h5>
+                    <div class="standard">
+                        <input type="text" placeholder="First Name" required />
+                    </div>
+                    <div class="standard">
+                        <input type="text" placeholder="Last Name" required />
+                    </div>
+                    <div class="standard">
+                        <input type="email" placeholder="Email Address" required />
+                    </div>
+                    <div class="standard">
+                        <input type="password" placeholder="Old Password" required />
+                    </div>
+                    <div class="standard">
+                        <input type="password" placeholder="New Password" required />
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn " data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn ">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+        <div class="collapse navbar-collapse show" id="recentbots">
+        <div class="recent-bots">
+            <div class="headline-recent-bots">
+                <h2>Recent Chats</h2>
+                <i class='bx bxs-trash'></i>
+            </div>
+
+            <div class="search-recent-bots ">
+                <form>
+                    <input type="text" placeholder="Search for a chat ... " />
+                    <button class="btn"><i class='bx bx-search-alt'></i></button>
+            </div>
+            </form>
+            <div class="cards-recent-bots">
+                <div class="card-recent-bot">
+                    <div class="ai-img-wrapper">
+                        <img src="assests/img/profile.jpg" alt="recent-ai" width="100%">
+                    </div>
+                    <div class="card-details">
+                        <div class="header-card-details">
+                            <h5><a href="#">Tarek Abd El Aziz</a></h5>
+                            <button class="del"><i class='bx bxs-trash'></i></button>
+                        </div>
+                        <p class="date">Dec 6 , 11:50 </p>
+                        <p class="text">Okay mr Mahmoud...</p>
+                    </div>
+                </div>
+                <div class="card-recent-bot">
+                    <div class="ai-img-wrapper">
+                        <img src="assests/img/old-lawyer.png" alt="recent-ai" width="100%">
+                    </div>
+                    <div class="card-details">
+                        <div class="header-card-details">
+                            <h5><a href="#">Mahmoud Hamed</a></h5>
+                            <button class="del"><i class='bx bxs-trash'></i></button>
+                        </div>
+                        <p class="date">Dec 6 , 11:50 </p>
+                        <p class="text">Waiting the paper.</p>
+                    </div>
+                </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="gpt-starting-container " id="gpt">
+            <div class="chat-headline">
+                <div class="lawyer-chat-data">
+                    <div class="img-wrapper">
+                        <img src="assests/img/profile.jpg" width="100%" alt="lawyer image" />
+                    </div>
+                    <div class="laywer-details">
+                        <h5>Tarek Abd El Aziz</h5>
+                        <p>last seen: long time ago</p>
+                    </div>
+                </div>
+                <div class="tools">
+                    <a href="#"><i class='bx bxs-video-recording bx-flip-horizontal bx-md'></i></a>
+                    <span onclick="openNav()"><i
+                            class='bx bx-dots-horizontal-rounded bx-flip-horizontal bx-md'></i></span>
+
+                </div>
+            </div>
+
+
+            <!-- Chats container -->
+
+
+            <div class="chat-container">
+                <div class="chat outgoing">
+                    <div class="chat-content">
+                        <div class="chat-details">
+
+                            <div class="file-card">
+                                <div class="file-data">
+                                    <p>Uploaded Papers.pdf</p>
+                                    <button><i class='bx bxs-download bx-sm'></i></button>
+                                </div>
+                                <span class="time">12 Dec , 2:06 pm</span>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="chat outgoing">
+                    <div class="chat-content">
+                        <div class="chat-details">
+                            <div class="txt-mess">
+                                <p class="txt">This is all the required paper.</p>
+                                <span class="time">12 Dec , 2:06 pm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat incoming">
+                    <div class="chat-content">
+                        <div class="chat-details">
+                            <img src="/assests/img/profile.jpg" alt="AI law-img">
+
+                            <div class="txt-mess">
+                                <p class="txt">Okay I will see them later</p>
+                                <span class="time">12 Dec , 2:06 pm</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="chat outgoing">
+                    <div class="chat-content">
+                        <div class="chat-details">
+                            <div class="txt-mess">
+                                <p class="txt">Okay Mr Tarek</p>
+                                <span class="time">12 Dec , 2:06 pm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+
+            </div>
+
+            <!-- Typing container -->
+            <div class="typing-container">
+                <div class="typing-content " id="typingBar">
+                    <div class="typing-textarea form">
+                        <textarea id="chat-input" spellcheck="false" placeholder="Enter a prompt here"
+                            required></textarea>
+
+                    </div>
+                    <div class="typing-controls">
+                        <span id="send-btn" class="material-symbols-rounded"><i class='bx bx-send bx-sm'></i></span>
+
+                        <div class="in">
+                            <input type="file" accept=".png,.jpg,.jpeg,.gif" name="uploadfile" id="img"
+                                style="display:none;" onchange="javascript:showoneimg()" />
+                            <label for="img"><span id="delete-btn" class="material-symbols-rounded"><i
+                                        class='bx bx-paperclip bx-flip-vertical bx-sm'></i></span></label>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Side bar -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+
+            <h4>Attached Files</h4>
+            <div class="file-card">
+                <div class="file-data">
+                    <p>Uploaded Papers.pdf</p>
+                    <button><i class='bx bxs-download bx-sm'></i></button>
+                </div>
+                <p class="date"><span>12 Dec</span>,<span>2:06 pm</span></p>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <!-- Javascript files -->
+    <script src="assests/js/bootstrap-js/bootstrap.min.js"></script>
+    <script src="assests/js/global.js"></script>
+    <script src="assests/js/chatting.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+        <script src="assests/js/animations/ai.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,252 @@
+.main{
+    overflow-x: hidden;
+}
+.profile-headline {
+
+    background-image: url('/assests/img/courtProfile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+
+}
+
+.profile .img-wrapper {
+    width: 250px;
+
+}
+
+.profile .img-wrapper img {
+    border-radius: 50%;
+}
+
+.profile-data {
+    margin-left: 30px;
+    color: var(--secondary-color);
+}
+.profile-data p{
+    color: var(--font-color);
+}
+
+.profile {
+    position: relative;
+    bottom: 70px;
+    left: 160px;
+    display: flex;
+    align-items: center;
+}
+.btn-postion{
+    position: absolute;
+    top: 275px;
+    left: 80%;
+}
+.overview-data{
+    position: relative;
+    left: 160px;
+}
+.nav-tabs {
+    border-color: var(--primary-color);
+    
+}
+.nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fff;
+    border-color: var(--primary-color);
+background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+.nav-link{
+    color: var(--secondary-color);
+    padding: 0.5rem 3rem;
+}
+.tab-pane p{
+    color: var(--font-color);
+    line-height: 33px;
+    margin-bottom: 50px;
+}
+.tab-pane h5{
+    color: var(--secondary-color);
+    position: relative;
+    margin: 20px 0;
+}
+.tab-pane h5 i{
+    color: var(--primary-color);
+}
+.tab-pane h5::before{
+    content: " " !important;
+    position: absolute;
+    top: 33px;
+    background: var(--primary-color);
+    height: 3px;
+    width: 70px;
+
+}
+.activity-head{
+    display: flex;
+    align-items: flex-start;
+}
+.activity-head .image-wrapper{
+    width: 50px;
+}
+.activity-head .image-wrapper img{
+    border-radius: 50%;
+}
+.activity-data{
+    margin-left: 20px;
+
+}
+.activity-data h6{
+    color: var(--secondary-color);
+    margin: 0;
+}
+.activity-data p{
+    color: var(--font-color);
+    font-size: 0.8rem;
+    margin: 0;
+}
+.activity .activity-txt{
+    margin: 10px 0;
+}
+.activity{
+    border-bottom:  1px solid var(--primary-color);
+    margin: 30px 0;
+}
+
+
+.available{
+    margin: 0 50px;
+}
+.available h4{
+margin: 20px 0;
+color: var(--font-color);
+padding: 10px;
+}
+.available i{
+color: var(--primary-color);
+}
+
+/* modal style */
+
+.modal-body{
+    background-color: var(--light-bg);
+    height: 500px;
+    overflow-y: scroll;
+}
+.modal-body .profile .img-wrapper {
+    width: 100px;
+
+}
+
+.modal-body .profile .img-wrapper img {
+    border-radius: 50%;
+}
+
+.modal-body .profile-data {
+    margin-left: 30px;
+    color: var(--secondary-color);
+}
+.modal-body .profile-data p{
+    color: var(--font-color);
+}
+
+.modal-body .profile {
+    position: relative;
+    bottom: 00px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+}
+.in{
+    color: rgb(0, 123, 255);
+    font-size: 0.8rem;
+    
+}
+#delete-btn{
+    cursor: pointer !important; 
+}
+.modal-body form input{
+    background-color: transparent !important;
+    margin: 10px 0;
+    
+}
+.modal-body form input::placeholder{
+    color: var(--secondary-color);
+}
+.modal-body form textarea{
+    background-color: transparent !important;
+    margin: 10px 0;
+    
+}
+.modal-body form input:focus{
+    outline-color: var(--secondary-color);
+}
+.modal-body form textarea::placeholder{
+    color: var(--secondary-color);
+}
+.modal-body form textarea:focus{
+    outline-color: var(--secondary-color);
+}
+.modal-body h5{
+    position: relative;
+    color: var(--font-color);
+    margin: 25px 0;
+}
+.modal-body h5::before{
+    content: " " !important;
+    position: absolute;
+    top: 33px;
+    background: var(--primary-color);
+    height: 3px;
+    width: 70px;
+
+}
+
+
+@media (max-width:1195px) {
+    .profile{
+        left: 40px;
+    }
+    .overview-data{
+        left: 40px;
+    }
+
+}
+
+@media (max-width:750px){
+    .profile{
+        flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    }
+    .profile-data{
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .btn-postion{
+        left: 0;
+        top: 0;
+        position: relative;
+    }
+    .btn-wrapper{
+        width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 528px;
+    
+    }
+    .nav-link {
+        color: var(--secondary-color);
+        padding: 0.5rem 1rem;
+    }
+    .overview-data{
+        left: 0;
+    }
+    .modal-body .profile-data {
+        margin-left: 00px;
+        color: var(--secondary-color);
+    }
+
+}
+
+

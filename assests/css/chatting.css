@@ -1,0 +1,327 @@
+html , body {
+    overflow: hidden;
+}
+.gpt-starting-container {
+    left: 0;
+    margin: 30px 20px 0 20px ;
+}
+.card-details h5{
+    margin: 0;
+  }
+  .card-details h5 a{
+      margin: 0;
+      color: #fff !important;
+      text-decoration: none;
+  }
+  .ai-img-wrapper{
+    width: 70px;
+    height: 70px;
+    margin: 18px;
+    }
+    .ai-img-wrapper img{
+        border-radius: 15px;
+        height: 70px;
+    }
+
+    .chat-headline{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 4px 2px -2px #d4c291;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    }
+    .lawyer-chat-data{
+        display: flex;
+        align-items: center;
+        color: var(--secondary-color);
+    }
+    .lawyer-chat-data .img-wrapper{
+        width: 50px;
+        height: 50px;
+        border: 1px solid var(--primary-color);
+        border-radius: 50%;
+        padding: 2px;
+    }
+    .lawyer-chat-data img{
+        border-radius: 50%;
+    }
+    .lawyer-chat-data h5{
+        margin-bottom: 5px;
+    }
+.lawyer-chat-data p{
+    margin: 0;
+    font-size: 0.7rem;
+    color: var(--secondary-color);
+}
+.laywer-details{
+    margin: 0 10px ;
+}
+.chat-headline .tools{
+    position: relative;
+    right: 35px;
+}
+.chat-headline .tools a{
+    color: var(--secondary-color) !important;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.bx-dots-horizontal-rounded{
+    color: var(--secondary-color);
+}
+.bx-paperclip{
+    transform: rotate(-90deg);
+}
+
+.gpt-main-section .recent-bots {
+    position: relative;
+    background-color: var(--primary-color);
+    height: 100vh;
+    overflow-y: scroll;
+
+}
+.cards-recent-bots {
+    width: 316px;
+}
+
+/* Side bar style */
+/* The side navigation menu */
+.sidenav {
+    height: 100vh; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    z-index: 1; 
+    background-color: var(--primary-color); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding: 0;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+.sidenav #closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    visibility: hidden;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.sidenav h4{
+    margin: 20px 0 30px 0;
+    color: var(--secondary-color);
+    position: relative;
+}
+.sidenav h4::before{
+    content: " ";
+    position: absolute;
+    top: 33px;
+    background: var(--secondary-color);
+    height: 3px;
+    width: 50px;
+
+}
+.file-card{
+    margin: 15px 0;
+    width: 100%;
+    
+}
+.sidenav .file-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-bg);
+    color: var(--secondary-color);
+    
+    border-radius: 15px;
+
+}
+.sidenav .file-data p{
+    font-size: 0.8rem;
+    color: var(--secondary-color);
+    margin: 0;
+    padding-left: 10px;
+}
+.sidenav .file-card button{
+    border: 1px solid #d4c291;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 15px 15px;
+    border-radius: 0 15px 15px 0;
+}
+.sidenav .file-card .date{
+    font-size: 0.8rem;
+    margin: 5px 0 15px 15px;
+    color: var(--secondary-color);
+}
+
+
+.chat .chat-details .txt {
+
+    border: 2px solid #eee;
+    border-radius: 15px;
+    padding: 10px 15px ;
+    margin: 0 15px;
+    width: 100%;
+    box-shadow: 2px 2px 3px #eee;
+  }
+
+
+/* .chat .chat-details .message-box{
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin: 0 15px;
+    width: 100%;
+    box-shadow: 2px 2px 3px #eee;
+} */
+.chat-details .file-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    
+    border-radius: 15px;
+
+}
+.chat-details .file-data p{
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding-left: 10px;
+}
+.chat-details .file-card{
+    margin: 0;
+}
+.chat-container .chat {
+    padding: 5px 10px;
+}
+.chat-details .file-card button{
+    border: 1px solid #d4c291;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 15px 15px;
+    border-radius: 0 15px 15px 0;
+}
+.chat-details .time{
+    font-size: 0.8rem !important;
+    margin: 5px 0px 15px 25px !important;
+    color: var(--secondary-color) !important;
+    width: 100%;
+}
+
+.chat-container{
+    overflow-y: scroll;
+    padding-bottom: 400px;
+}
+
+.txt-mess{
+    display: flex;
+    flex-direction: column;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+.typing-container{
+    width: -webkit-fill-available;;
+}
+
+@media (max-width:992px) {
+    .gpt-main-section .recent-bots {
+        position: fixed;
+}
+.main .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+  }
+  .cards-recent-bots {
+    width: 100%;
+}
+
+/* .gpt-starting-container{
+    width: 0;
+    padding: 0;
+} */
+}
+
+@media (max-width:700px) {
+    .sidenav #closebtn {
+        position: absolute;
+        top: 35px;
+    }
+    .file-card {
+        margin: 15px 0;
+         width: 100%;
+    }
+    .card-details h5{
+        font-size: 1rem;
+    }
+}
+@media (max-width:390px) {
+    .ai-img-wrapper{
+        display: none;
+    }
+    .card-details {
+        margin: 0 15px;
+    }
+    .chat-headline .tools a {
+        color: var(--secondary-color) !important;
+        text-decoration: none;
+        margin: 0 0px;
+    }
+    .chat-headline .tools{
+        right: 0;
+    }
+    .chat-headline h5{
+        font-size: 1rem;
+    }
+    .typing-container textarea::placeholder{
+        font-size: 0.8rem;
+    }
+    .typing-content span {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+
+
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

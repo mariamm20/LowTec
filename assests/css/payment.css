@@ -1,0 +1,91 @@
+.content{
+    width: 100%;
+    padding: 50px 160px;
+
+}
+
+
+.top{
+    position: relative;
+
+}
+form{padding: 0;}
+
+.singleProduct{
+    padding-top: 20px ;
+    justify-content: flex-start;
+}
+.productImage{
+    margin-left: 0;
+}
+
+
+.radios-group{
+    display: flex;
+    align-items: center;
+}
+.radio-div{
+    margin-right: 25px;
+    display: flex;
+    width: min-content;
+    align-items: center;
+}
+label{
+    margin-left: 5px;
+}
+h3{
+    color: var(--secondary-color);
+}
+input[type='radio']{
+    position: relative;
+    top: 2px;
+}
+input[type='checkbox']{
+    position: relative;
+    top: 2px;
+    width: min-content;
+}
+.attention{
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+
+@media (max-width:992px) {
+    .content{
+        padding: 20px 20px;
+    }
+    .productDetails {
+        width: auto;
+        text-align: left;
+        padding: 30px 30px 30px 30px;
+    }
+}
+
+
+@media (max-width:923px) {
+    .singleProduct{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .productDetails{
+        width: auto;
+        text-align: left;
+    }
+    .productDetails p{
+        width: auto;
+    }
+    .cardFooter{
+        justify-content: center;
+    }
+    .productDetails h2{
+        margin: 15px 0;
+    }
+    
+}
+
+@media (max-width:440px) {
+    label{
+        font-size: 0.8rem;
+    }
+    
+}

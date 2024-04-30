@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="LawTec is platform combines legal tradition with artificial intelligence to create a collaborative space where legal minds can shape the future of the profession." />
+    <meta name="keywords" content="Lowtec, online, lawyer, justice, consultant " />
+    <!-- Title -->
+    <title>LawTec</title>
+    <!-- favicon  -->
+    <link rel="icon" href="assests/img/logo-icon.ico" />
+    <!-- Icons CDN -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Css files -->
+    <link rel="stylesheet" href="assests/css/bootstrap-css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assests/css/global.css" />
+    <link rel="stylesheet" href="assests/css/register.css" />
+</head>
+
+<body>
+    <div class="main">
+
+
+        <section class="user-register-section">
+            <div class="left-section">
+                <div class="img-wrapper-bg">
+                    <img src="assests/img/bgRegister.png" alt="bg" width="100%" />
+                </div>
+                <div class="container-fluid">
+                    <div class="container-fluid img-wrapper">
+                        <a class="navbar-brand" href="#">
+                            <img src="assests/img/logo-dark.png" alt="logo image" width="100%">
+                        </a>
+                    </div>
+                    <div class="register-two">
+                        <h2>Are You A Lawyer?</h2>
+                        <a href="LaywerRegister.html">Register from here </a>
+                    </div>
+                </div>
+
+            </div>
+            <section class="right-section">
+                <form id="form" action="/">
+                    <h1>
+                        Create Account
+                    </h1>
+                    <div class="icons-div">
+                        <a href="#"><i class='bx bxl-google-plus-circle bx-md'></i></a>
+                        <a href="#"><i class='bx bxl-facebook-circle bx-md'></i></a>
+                    </div>
+                    <p>or use email for register</p>
+                    <div class="input-control">
+
+                        <input type="text" id="fname" name="fname" placeholder="Your First Name" />
+
+
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+                        <input type="text" id="lname" name="lname" placeholder="Your Last Name" />
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+                        <input type="text" id="email" name="email" placeholder="Your Email" />
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+
+                        <input type="password" id="password" name="password" placeholder="Your Password" />
+                        <div class="password-progress">
+                            <progress max="100" value="0" id="meter"></progress>
+                            <div class="textbox text-center"></div>
+                        </div>
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+
+                        <input type="password" id="password2" name="password2" placeholder="Confirm Your Password" />
+
+                        <div class="error"></div>
+                    </div>
+                    <div class="show-pass-div">
+                        <input type="checkbox" id="show" onclick="myFunction()"><label for="show">Show Password</label>
+                    </div>
+
+
+                    <button class="btn" type="submit">Create Account</button>
+                    <br>
+                    <p class="login">Already have account?<a href="login.html"> Login Now</a></p>
+                </form>
+
+            </section>
+
+        </section>
+    </div>
+
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <!-- <script src="assests/js/animations/registerAnimation.js"></script> -->
+    <script src="assests/js/userValidations.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>
